@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Fitness Club</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+        rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(img.jpg);
+            background-size: cover;
+            background-position: center;
+        }
+
+        .navbar {
+            display: flex;
+        }
+
+        .left {
+            font-size: 30px;
+            font-family: "Ubuntu", sans-serif;
+            width: 50%;
+            margin-left: 80px;
+            display: flex;
+            align-items: center;
+        }
+
+        .right {
+            width: 50%;
+            text-align: right;
+            padding: 36px;
+        }
+        #info{
+            width: 50%;
+        }
+
+        .menu {
+            text-decoration: none;
+            font-size: 20px;
+            margin: 6px;
+            padding: 10px;
+            font-family: "Ubuntu", sans-serif;
+            color: white;
+            transition: all 0.8s ease;
+        }
+
+        .menu:hover {
+            text-decoration: underline;
+        }
+
+
+        #logo {
+            width: 90px;
+            cursor: pointer;
+        }
+
+        section {
+            font-family: "Ubuntu", sans-serif;
+            text-align: center;
+            height: 90vh;
+            display: flex;
+            justify-content: center;
+        }
+
+        .content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            text-align: center;
+            gap: 1rem;
+            color: white;
+        }
+
+        .footer {
+            background-color: #222;
+            color: grey;
+            text-align: center;
+            padding: 30px;
+        }
+
+        .footer a {
+            color: grey;
+            text-decoration: none;
+            margin: 0 8px;
+        }
+
+        #end {
+            margin: 20px;
+        }
+
+        .btn {
+            border: 2px solid white;
+            padding: 12px;
+            border-radius: 20px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: all 0.8s ease;
+
+        }
+
+        .btn:hover {
+            background: transparent;
+            color: white;
+        }
+
+        h1 {
+            font-size: 60px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="left">
+            <img src="logo_transparent.png" alt="logo" id="logo">
+        </div>
+        <div class="right">
+            <a href="#" class="menu">Home</a>
+            <a href="#" class="menu">About</a>
+            <a href="#" class="menu">Services</a>
+            <a href="#" class="menu">Testimonials</a>
+            <a href="#" class="menu">Facilities</a>
+            <a href="#" class="menu">Memberships</a>
+            <a href="#" class="menu">Schedule</a>
+        </div>
+    </nav>
+    <section>
+        <div class="content">
+            <h1>Welcome to the Fitness Club!</h1>
+            <p id="info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, voluptate obcaecati! Incidunt quibusdam perferendis dolores magnam omnis sit natus recusandae assumenda, reiciendis alias cupiditate ratione dicta ipsa, molestias, labore error. Debitis, atque sed</p>
+            <button class="btn">Know More</button>
+            <button class="btn" onclick="window.location.href='contact.html'">Contact Us</button>
+        </div>
+    </section>
+    <footer class="footer">
+        <p>&copy; 2026 Fitness Club. All rights reserved.</p>
+        <p id="end">
+            <a href="#">Home</a> |
+            <a href="#">About</a> |
+            <a href="#">Contact</a>
+        </p>
+    </footer>
+</body>
+
+</html>
